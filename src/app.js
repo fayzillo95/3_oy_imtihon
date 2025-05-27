@@ -6,6 +6,7 @@ import dbCon from "./config/Database.js";
 import branch_router from "./routers/branch.routes.js";
 import cars_router from "./routers/car.routes.js";
 import fileUpload from "express-fileupload";
+import permission_router from "./routers/permissio.routes.js";
 
 const app = express()
 
@@ -15,6 +16,7 @@ app.use(fileUpload())
 app.use("/api/users",user_router)
 app.use("/api/branchs",branch_router)
 app.use("/api/cars", cars_router)
+app.use("/api/permissions",permission_router)
 app.use(errorMidllvare)
 
 const initApp = async () => {

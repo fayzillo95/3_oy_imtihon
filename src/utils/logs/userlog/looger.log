@@ -85,3 +85,51 @@ Stack: Error: User not found !
     at UserService.checkSign (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/user.service.js:32:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async signUser (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/user.controller.js:29:28)
+[2025-05-28 03:20:03] INFO: Validation failed "name" is required
+Stack: Error: Validation failed "name" is required
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 03:23:25] INFO: Validation failed "user_id" is not allowed
+Stack: Error: Validation failed "user_id" is not allowed
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 03:23:50] INFO: Validation failed "user_id" is not allowed
+Stack: Error: Validation failed "user_id" is not allowed
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 03:24:17] ERROR: Cannot read properties of undefined (reading 'img')
+Stack: TypeError: Cannot read properties of undefined (reading 'img')
+    at createPermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:18:89)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
