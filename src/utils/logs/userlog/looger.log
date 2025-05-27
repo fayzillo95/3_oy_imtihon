@@ -1,0 +1,87 @@
+[2025-05-28 02:03:16] ERROR: CustomError is not defined
+Stack: ReferenceError: CustomError is not defined
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:23)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 02:04:19] ERROR: Invalid data epty body
+Stack: Error: Invalid data epty body
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:29)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 02:10:52] INFO: Validation failed "img" is required
+Stack: Error: Validation failed "img" is required
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 02:19:14] INFO: Cars already exists !
+Stack: Error: Cars already exists !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/cars.service.js:33:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 02:20:53] ERROR: Invalid data epty body
+Stack: Error: Invalid data epty body
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:29)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 02:46:50] INFO: Validation failed "price" is required
+Stack: Error: Validation failed "price" is required
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 02:51:13] INFO: File is required !
+Stack: Error: File is required !
+    at updateValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:25:30)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at param (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:600:14)
+    at param (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:610:14)
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:664:3)
+[2025-05-28 03:00:29] INFO: User not found !
+Stack: Error: User not found !
+    at UserService.deleteItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/user.service.js:57:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async logoutUser (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/user.controller.js:47:27)
+[2025-05-28 03:00:41] INFO: User not found !
+Stack: Error: User not found !
+    at UserService.checkSign (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/user.service.js:32:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async signUser (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/user.controller.js:29:28)
