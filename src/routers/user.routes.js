@@ -7,10 +7,10 @@ import { checkToken } from "../midllwares/usersMidllwares/validationmidllware/ck
 
 const user_router = Router()
 
-user_router.post("/v1/register", registerValid, UserController.createUser, jwtMidllware)
-user_router.post("/v2/login", loginValid, UserController.signUser, jwtMidllware)
-user_router.put("/v3/update", checkToken, updateValid, UserController.updateUser, userResponseMidllware)
-user_router.delete("/v4/delete", checkToken, UserController.logoutUser, userResponseMidllware)
-user_router.get("/v5/getall", UserController.getAllUser, userResponseMidllware)
+user_router.post("/api/users/v1/register", registerValid, UserController.createUser, jwtMidllware)
+user_router.post("/api/users/v2/login", loginValid, UserController.signUser, jwtMidllware)
+user_router.put("/api/users/v3/update", checkToken, updateValid, UserController.updateUser, userResponseMidllware)
+user_router.delete("/api/users/v4/delete", checkToken, UserController.logoutUser, userResponseMidllware)
+user_router.get("/api/users/v5/getall", UserController.getAllUser, userResponseMidllware)
 
 export default user_router

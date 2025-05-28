@@ -7,16 +7,20 @@ import branch_router from "./routers/branch.routes.js";
 import cars_router from "./routers/car.routes.js";
 import fileUpload from "express-fileupload";
 import permission_router from "./routers/permissio.routes.js";
+import clearLogger from "./utils/logs/logger/clearlog.js";
+import readLogger from "./utils/logs/logger/readlog.js";
 
 const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(fileUpload())
-app.use("/api/users",user_router)
-app.use("/api/branchs",branch_router)
-app.use("/api/cars", cars_router)
-app.use("/api/permissions",permission_router)
+clearLogger(app)
+readLogger(app,express)
+app.use(user_router)
+app.use(branch_router)
+app.use(cars_router)
+app.use(permission_router)
 app.use(errorMidllvare)
 
 const initApp = async () => {
