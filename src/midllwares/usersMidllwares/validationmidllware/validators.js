@@ -1,5 +1,5 @@
 import { CustomError, ValidationError } from "../../../utils/errors/Vlaidatio.error.js"
-import Validation from "../../../utils/validations/UserValidation.js"
+import Validation from "../../../utils/validations/user.validations.js"
 
 export const registerValid = (req, res, next) => {
     try {
@@ -18,7 +18,7 @@ export const registerValid = (req, res, next) => {
 
 export const loginValid = (req, res, next) => {
     try {
-        if(!req.body) throw new CustomError("Invalid data epty body")
+        if(!req.body) throw new CustomError("Invalid data epty body",400)
         if(Object.values(req.body).length === 0) throw new CustomError("Invalid data undefined values !", 400)
         
         const {error} = Validation.loginValidation(req.body)

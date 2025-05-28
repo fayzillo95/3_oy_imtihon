@@ -1,4 +1,15 @@
 import Joi from "joi";
+import { birthdayTest } from "./date.test.js";
+
+function isDate(value, helppers) {
+    try {
+        birthdayTest(value)
+        return value
+    } catch (error) {
+        return helppers.message(error.message)        
+    }
+}
+
 
 export default class Validation {
     constructor() { }
@@ -8,7 +19,7 @@ export default class Validation {
             username: Joi.string().min(3).max(100).alphanum().required(),
             password: Joi.string().min(8).max(32).required(),
             r_password: Joi.ref('password'),
-            birth_day: Joi.string().isoDate().required()
+            birth_day: Joi.string().custom(isDate).required()
         })
         return registerSchema.validate(payload, {
             allowUnknown: false,

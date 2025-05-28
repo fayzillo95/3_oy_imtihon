@@ -247,3 +247,87 @@ Stack: Error: Validation failed "rusm" length must be at least 3 characters long
     at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
     at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:35:37] INFO: Validation failed CustomError is not defined
+Stack: Error: Validation failed CustomError is not defined
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:39:08] INFO: Validation failed 400
+Stack: Error: Validation failed 400
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:40:20] INFO: Validation failed Tug'ilgan sana formati yyyy-mm-dd bo'lishi kerak
+Stack: Error: Validation failed Tug'ilgan sana formati yyyy-mm-dd bo'lishi kerak
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:41:05] INFO: Validation failed Tug'ilgan sana formati yyyy-mm-dd bo'lishi kerak
+Stack: Error: Validation failed Tug'ilgan sana formati yyyy-mm-dd bo'lishi kerak
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:41:58] INFO: Validation failed Tug'ilgan kun 2-oy uchun 1 dan 28 gacha bo'lishi kerak
+Stack: Error: Validation failed Tug'ilgan kun 2-oy uchun 1 dan 28 gacha bo'lishi kerak
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:42:17] INFO: Validation failed Tug'ilgan yil 1900 yildan katta va hozirgi yildan kichik bo'lishi kerak
+Stack: Error: Validation failed Tug'ilgan yil 1900 yildan katta va hozirgi yildan kichik bo'lishi kerak
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:43:40] INFO: Validation failed Tug'ilgan sana kelajakda bo'lishi mumkin emas
+Stack: Error: Validation failed Tug'ilgan sana kelajakda bo'lishi mumkin emas
+    at registerValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/usersMidllwares/validationmidllware/validators.js:11:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)

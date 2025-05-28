@@ -7,8 +7,8 @@ export default class Validation {
         const createSchema = Joi.object({
             branch_id : Joi.string().length(24).required(),
             user_id : Joi.string().length(24).required(),
-            actions : Joi.string().min(3).required(),
-            model : Joi.string().min(3).required(),
+            actions : Joi.string().min(3).valid("POST","PUT","DELETE","GET","PATCH").required(),
+            model : Joi.string().min(3).valid("cars","branchs").required(),
         })
         return createSchema.validate(payload, {
             allowUnknown: false,
@@ -18,7 +18,7 @@ export default class Validation {
 
     static updateValidation(payload) {
         const updateSchema = Joi.object({
-            actions : Joi.string().min(3).required(),
+            actions : Joi.string().min(3).valid("POST","PUT","DELETE","GET","PATCH").required(),
         })
         return updateSchema.validate(payload, {
             allowUnknown: false,
