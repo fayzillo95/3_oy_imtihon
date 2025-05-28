@@ -1,5 +1,5 @@
-import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../utils/errors/Vlaidatio.error.js";
-import usersModel from "../utils/models/usersModel.js";
+import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
+import usersModel from "../../utils/models/usersModel.js";
 import bcrypt from "bcrypt"
 
 export default class UserService {

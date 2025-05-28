@@ -15,6 +15,14 @@ export class ValidationError extends CustomError {
   }
 }
 
+export class InValidationError extends CustomError {
+  constructor(target) {
+    super(`InvalidObjectId id ${target} !`, 400);
+  }
+}
+        
+
+
 export class ForbiddenError extends CustomError {
   constructor(message = 'Access forbidden') {
     super(message, 403);

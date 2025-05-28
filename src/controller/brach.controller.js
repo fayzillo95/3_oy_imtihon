@@ -1,4 +1,4 @@
-import BranchService from "../service/branch.service.js";
+import BranchService from "../service/makro_service/branch.service.js";
 
 export default class BranchController{
     constructor(){}

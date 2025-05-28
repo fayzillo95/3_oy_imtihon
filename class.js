@@ -1,3 +1,20 @@
+import "dotenv/config"
+
+import dbCon from "./src/config/Database.js"
+import branchModel from "./src/utils/models/branchModel.js"
+import { checkIdAndExists } from "./src/service/mikro_service/checkId.js"
+
+const test = async (params) => {
+  try {
+  dbCon() 
+  const res = await checkIdAndExists("68361ba4f609a2b09e7977d4",branchModel,"Branch")
+  console.log(res)
+} catch (error) {
+    console.log(error.message)
+}
+}
+// test()
+
 const addressIds = [
   '683616744bf02ea6454b80da',
   '683616744bf02ea6454b80dc',
@@ -16,7 +33,6 @@ const addressIds = [
 
 
 
-// import "dotenv/config"
 // import migration from "./src/utils/migration/addressMigration.js"
 
 // async function name(params) {

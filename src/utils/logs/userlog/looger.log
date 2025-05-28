@@ -1,92 +1,26 @@
-[2025-05-28 02:03:16] ERROR: CustomError is not defined
-Stack: ReferenceError: CustomError is not defined
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:23)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
-    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 02:04:19] ERROR: Invalid data epty body
-Stack: Error: Invalid data epty body
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:29)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
-    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 02:10:52] INFO: Validation failed "img" is required
-Stack: Error: Validation failed "img" is required
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
-    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 02:19:14] INFO: Cars already exists !
-Stack: Error: Cars already exists !
-    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/cars.service.js:33:19)
+[2025-05-28 13:23:32] INFO: permission not found !
+Stack: Error: permission not found !
+    at PermissionService.getById (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/permission.service.js:16:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
-[2025-05-28 02:20:53] ERROR: Invalid data epty body
-Stack: Error: Invalid data epty body
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:7:29)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
-    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 02:46:50] INFO: Validation failed "price" is required
-Stack: Error: Validation failed "price" is required
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
-    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 02:51:13] INFO: File is required !
-Stack: Error: File is required !
-    at updateValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:25:30)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
-    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
-    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
-    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
-    at param (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:600:14)
-    at param (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:610:14)
-    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:664:3)
-[2025-05-28 03:00:29] INFO: User not found !
+    at async PermissionService.deleteItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/permission.service.js:48:9)
+    at async deletePermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:39:27)
+[2025-05-28 13:24:41] INFO: User not found !
 Stack: Error: User not found !
     at UserService.deleteItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/user.service.js:57:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async logoutUser (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/user.controller.js:47:27)
-[2025-05-28 03:00:41] INFO: User not found !
+[2025-05-28 13:25:09] INFO: User not found !
 Stack: Error: User not found !
     at UserService.checkSign (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/user.service.js:32:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async signUser (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/user.controller.js:29:28)
-[2025-05-28 03:20:03] INFO: Validation failed "name" is required
-Stack: Error: Validation failed "name" is required
+[2025-05-28 13:50:26] INFO: permission already exists !
+Stack: Error: permission already exists !
+    at PermissionService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/permission.service.js:34:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createPermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:18:34)
+[2025-05-28 13:50:46] INFO: Validation failed "branch_id" length must be 24 characters long
+Stack: Error: Validation failed "branch_id" length must be 24 characters long
     at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
@@ -97,9 +31,44 @@ Stack: Error: Validation failed "name" is required
     at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
     at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 03:23:25] INFO: Validation failed "user_id" is not allowed
-Stack: Error: Validation failed "user_id" is not allowed
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
+[2025-05-28 13:51:57] INFO: Branch not found !
+Stack: Error: Branch not found !
+    at checkIdAndExists (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/mikro_service/checkId.js:18:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PermissionService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/permission.service.js:26:9)
+    at async createPermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:18:34)
+[2025-05-28 13:52:13] INFO: User not found !
+Stack: Error: User not found !
+    at checkIdAndExists (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/mikro_service/checkId.js:18:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PermissionService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/permission.service.js:25:9)
+    at async createPermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:18:34)
+[2025-05-28 13:53:15] INFO: Permission not found !
+Stack: Error: Permission not found !
+    at checkIdAndExists (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/mikro_service/checkId.js:18:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PermissionService.updateItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/permission.service.js:41:28)
+    at async updatePermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:29:27)
+[2025-05-28 14:00:27] ERROR: checkIdAndExists is not defined
+Stack: ReferenceError: checkIdAndExists is not defined
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:30:9)
+    at createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:46)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+[2025-05-28 14:01:06] INFO: Cars already exists !
+Stack: Error: Cars already exists !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:35:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:01:14] INFO: Validation failed "branch_id" length must be 24 characters long
+Stack: Error: Validation failed "branch_id" length must be 24 characters long
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
     at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
@@ -109,9 +78,15 @@ Stack: Error: Validation failed "user_id" is not allowed
     at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
     at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 03:23:50] INFO: Validation failed "user_id" is not allowed
-Stack: Error: Validation failed "user_id" is not allowed
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:12:19)
+[2025-05-28 14:01:34] INFO: Branch not found !
+Stack: Error: Branch not found !
+    at checkIdAndExists (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/mikro_service/checkId.js:18:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:31:9)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:01:49] INFO: Validation failed "price" must be a number
+Stack: Error: Validation failed "price" must be a number
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
     at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
@@ -121,15 +96,154 @@ Stack: Error: Validation failed "user_id" is not allowed
     at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
     at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
-[2025-05-28 03:24:17] ERROR: Cannot read properties of undefined (reading 'img')
-Stack: TypeError: Cannot read properties of undefined (reading 'img')
-    at createPermission (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/permission.controller.js:18:89)
+[2025-05-28 14:02:10] INFO: Cars already exists !
+Stack: Error: Cars already exists !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:35:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:04:28] INFO: Cars already exists !
+Stack: Error: Cars already exists !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:35:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:04:44] INFO: Price not allowed lestethen in 0 !
+Stack: Error: Price not allowed lestethen in 0 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:48:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:04:57] INFO: Price not allowed lestethen in 0 !
+Stack: Error: Price not allowed lestethen in 0 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:48:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:05:16] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:48:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:08:52] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:50:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:09:06] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:50:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:09:39] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:50:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:10:09] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:50:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:13:04] ERROR: Invalid file type text !
+Stack: Error: Invalid file type text !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:32:50)
+    at createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:46)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
-    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/permissionMidllwares/Permissionvalidations.js:14:9)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+[2025-05-28 14:13:56] ERROR: Invalid file type text !
+Stack: Error: Invalid file type text !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:33:50)
+    at createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:46)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+[2025-05-28 14:14:47] INFO: Invalid file type text !
+Stack: Error: Invalid file type text !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:33:50)
+    at createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:46)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+[2025-05-28 14:15:18] INFO: Invalid file type image !
+Stack: Error: Invalid file type image !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:33:50)
+    at createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:46)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:14:9)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+[2025-05-28 14:15:33] INFO: Price not allowed lestethen in 0.001 !
+Stack: Error: Price not allowed lestethen in 0.001 !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:52:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:19:30] ERROR: File requred img !
+Stack: Error: File requred img !
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:9:35)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
     at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
     at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
     at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
     at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:19:59] INFO: File requred img !
+Stack: Error: File requred img !
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:9:35)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:20:11] INFO: File requred img !
+Stack: Error: File requred img !
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:9:35)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)
+[2025-05-28 14:20:51] INFO: Cars already exists !
+Stack: Error: Cars already exists !
+    at CarsService.createItem (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/cars.service.js:39:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCars (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/car.controller.js:18:28)
+[2025-05-28 14:21:00] INFO: Validation failed "rusm" length must be at least 3 characters long
+Stack: Error: Validation failed "rusm" length must be at least 3 characters long
+    at createValid (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/midllwares/carsMidllwares/Carsvalidations.js:12:19)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/route.js:117:3)
+    at handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/lib/layer.js:152:17)
+    at /home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:295:15
+    at processParams (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:582:12)
+    at next (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:291:5)
+    at Function.handle (/home/fayzullo/Desktop/FN_3/TransportSales/node_modules/router/index.js:186:3)

@@ -1,7 +1,10 @@
-import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../utils/errors/Vlaidatio.error.js";
-import CarsModel from "../utils/models/carsModel.js";
+import { AuthorizationError, CustomError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
+import { checkIdAndExists } from "../mikro_service/checkId.js";
+import CarsModel from "../../utils/models/carsModel.js";
 import path from "path"
 import fs from "fs";
+import branchModel from "../../utils/models/branchModel.js";
+import carsModel from "../../utils/models/carsModel.js";
 
 function getPath(fileName) {
     const filePath = path.join(process.cwd(), "src", "utils", "uploads")
@@ -20,20 +23,21 @@ export default class CarsService {
         return data
     }
     static async getById(id) {
-        const Cars = await CarsModel.findById(id)
-        if(!Cars){
-            throw new NotFoundError("Cars")
-        }
-        return Cars        
+        const Car = await checkIdAndExists(id, carsModel, "Car")
+        return Car        
     }
 
     static async createItem(body,file) {
+        if(file.size > (5 * (1024*1024))) throw new CustomError("File size not allowed gretethen 5 mb !",400)
+        
+        if(!file.mimetype.includes("im")) throw new CustomError(`Invalid file type ${file.mimetype.split("/")[0]} !`,400)   
+        
+        await checkIdAndExists(body.branch_id, branchModel, "Branch")
         const Cars = await CarsModel.findOne({name : body.name})
-
+        
         if(Cars) {
             throw new ExistsError("Cars")
         }
-
         const fileName = new Date().getTime() + "_" + file.name
         const fullPath = getPath(fileName)
 
@@ -45,22 +49,21 @@ export default class CarsService {
 
         body.img = fileName
         body.price = Number(body.price)
-
+        if(body.price < 0.001) throw new CustomError("Price not allowed lestethen in 0.001 !",400)
         const result = await CarsModel.create(body)
         return result
     }
 
     static async updateItem(body, id) {
-        const Cars = await this.getById(id)
-        Cars.name = body.name
+        const Car = await checkIdAndExists(id, carsModel, "Car")
+        Car.name = body.name
 
-        await Cars.save()
+        await Car.save()
         return "Cars updated !"
     }
 
     static async deleteItem(id) {
-        console.log(id)
-        await this.getById(id)
+        await checkIdAndExists(id, carsModel, "Car")
         const result = await CarsModel.findByIdAndDelete(id)
         console.log(result)
         return "Cars deleted !"

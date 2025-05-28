@@ -1,4 +1,4 @@
-import PermissionService from "../service/permission.service.js";
+import PermissionService from "../service/makro_service/permission.service.js";
 
 export default class PermissionController{
     constructor(){}
@@ -26,7 +26,7 @@ export default class PermissionController{
     static async updatePermission(req, res, next) {
         try {
             let {id} = req.params
-            req.message = await PermissionService.updateItem(req.body ,id)
+            req.message = await PermissionService.updateItem(req.body.actions ,id)
             req.status = 201
             next()
         } catch (error) {

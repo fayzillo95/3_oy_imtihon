@@ -1,5 +1,5 @@
-import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../utils/errors/Vlaidatio.error.js";
-import branchModel from "../utils/models/branchModel.js";
+import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
+import branchModel from "../../utils/models/branchModel.js";
 
 export default class BranchService {
 
