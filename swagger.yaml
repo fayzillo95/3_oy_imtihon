@@ -113,12 +113,8 @@ paths:
       summary: Barcha foydalanuvchilar ro'yxati
       responses:
         '200':
-          description: Foydalanuvchilar ro'yxati
-          content:
-            application/json:
-              schema:
-                type: object
-                data : [users]
+            type: object
+            data : [users]
                   
         '500':
           description: Serverda xatolik
