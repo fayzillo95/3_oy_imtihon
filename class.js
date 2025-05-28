@@ -1,4 +1,6 @@
-import "dotenv/config"
+// import "dotenv/config"
+// import migration from "./src/utils/migration/addressMigration.js"
+// migration
 
 import dbCon from "./src/config/Database.js"
 import branchModel from "./src/utils/models/branchModel.js"
@@ -14,6 +16,7 @@ const test = async (params) => {
 }
 }
 // test()
+
 
 const addressIds = [
   '6837042aefd947f50831ce2e',

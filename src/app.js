@@ -9,18 +9,26 @@ import fileUpload from "express-fileupload";
 import permission_router from "./routers/permissio.routes.js";
 import clearLogger from "./utils/logs/logger/clearlog.js";
 import readLogger from "./utils/logs/logger/readlog.js";
+import admin_router from "./routers/admin.routes.js";
+import { swaggerLog } from "./service/mikro_service/swagger.js";
+
 
 const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(fileUpload())
+
+swaggerLog(app, express)
 clearLogger(app)
 readLogger(app,express)
+
 app.use(user_router)
 app.use(branch_router)
 app.use(cars_router)
 app.use(permission_router)
+app.use(admin_router)
+
 app.use(errorMidllvare)
 
 const initApp = async () => {

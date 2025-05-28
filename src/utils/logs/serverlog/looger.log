@@ -1,0 +1,16 @@
+[2025-05-29 02:11:46] ERROR: staff is not defined
+Stack: ReferenceError: staff is not defined
+    at AdminService.CreateRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/admin.service.js:25:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/admin.controller.js:8:29)
+[2025-05-29 02:13:06] ERROR: staff is not defined
+Stack: ReferenceError: staff is not defined
+    at AdminService.CreateRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/admin.service.js:25:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/admin.controller.js:8:29)
+[2025-05-29 02:22:12] ERROR: Bu id dagi staff mavjud
+Stack: Error: Bu id dagi staff mavjud
+    at AdminService.createStaff (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/admin.service.js:42:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AdminService.CreateRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/service/makro_service/admin.service.js:26:21)
+    at async createRole (file:///home/fayzullo/Desktop/FN_3/TransportSales/src/controller/admin.controller.js:8:29)

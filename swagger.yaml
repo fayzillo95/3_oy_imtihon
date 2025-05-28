@@ -1,0 +1,423 @@
+openapi: 3.0.3
+info:
+  title: Express API Documentation
+  description: Foydalanuvchilar, filiallar, mashinalar, ruxsatnomalar va administratorlar uchun API hujjatlari
+  version: 1.0.0
+servers:
+  - url: http://139.59.115.151:15975
+    description: Production server
+
+paths:
+  /api/users/v1/register:
+    post:
+      tags:
+        - Users
+      summary: Foydalanuvchini ro'yxatdan o'tkazish
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegister'
+            example:
+              username: johndoe
+              password: P@ssw0rd123
+              r_password: P@ssw0rd123
+              birth_day: 1990-01-01
+      responses:
+        '201':
+          description: Ro'yxatdan o'tish muvaffaqiyatli
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          description: Xato (validation)
+
+  /api/users/v2/login:
+    post:
+      tags:
+        - Users
+      summary: Foydalanuvchi tizimga kirishi
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserLogin'
+            example:
+              username: johndoe
+              password: P@ssw0rd123
+      responses:
+        '200':
+          description: Tizimga kirish muvaffaqiyatli
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+                  refreshToken:
+                    type: string
+                    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        '401':
+          description: Ruxsat yo'q
+
+  /api/users/v3/update:
+    put:
+      tags:
+        - Users
+      summary: Foydalanuvchi ma'lumotlarini yangilash
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdate'
+            example:
+              username: janedoe
+              birth_day: 1992-05-15
+      responses:
+        '200':
+          description: Yangilanish muvaffaqiyatli
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '401':
+          description: Ruxsat yo'q
+        '400':
+          description: Xato (validation)
+
+  /api/users/v4/delete:
+    delete:
+      tags:
+        - Users
+      summary: Foydalanuvchini tizimdan chiqishi
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Tizimdan chiqish muvaffaqiyatli
+        '401':
+          description: Ruxsat yo'q
+
+  /api/users/v5/getall:
+    get:
+      tags:
+        - Users
+      summary: Barcha foydalanuvchilar ro'yxati
+      responses:
+        '200':
+          description: Foydalanuvchilar ro'yxati
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UserResponse'
+        '500':
+          description: Serverda xatolik
+
+  /api/branchs/v1/open:
+    post:
+      tags:
+        - Branches
+      summary: Yangi filial yaratish
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BranchCreate'
+            example:
+              name: Toshkent Filiali
+              address_id: 60d0fe4f5311236168a109ca
+      responses:
+        '201':
+          description: Filial muvaffaqiyatli yaratildi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BranchResponse'
+
+  /api/branchs/v2/update/{id}:
+    put:
+      tags:
+        - Branches
+      summary: Filial ma'lumotlarini yangilash
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Filial ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BranchUpdate'
+            example:
+              name: Yangilangan Filial Nomi
+      responses:
+        '200':
+          description: Yangilash muvaffaqiyatli
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BranchResponse'
+
+  /api/branchs/v3/closed/{id}:
+    delete:
+      tags:
+        - Branches
+      summary: Filialni yopish
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Filial ID
+      responses:
+        '200':
+          description: Filial yopildi
+
+  /api/branchs/v4/getall:
+    get:
+      tags:
+        - Branches
+      summary: Barcha filiallar ro'yxati
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Filiallar ro'yxati
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BranchResponse'
+
+  /api/cars/v1/create:
+    post:
+      tags:
+        - Cars
+      summary: Yangi mashina qo'shish
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CarCreate'
+            example:
+              name: Malibu
+              branch_id: 60d0fe4f5311236168a109ca
+              rusm: Chevrolet
+              color: Qora
+              price: 25000
+              img : 
+                mimetype : image
+                data : "Buffer 5f 2a ...."
+      responses:
+        '201':
+          description: Mashina yaratildi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CarResponse'
+
+  /api/cars/v2/update/{id}:
+    put:
+      tags:
+        - Cars
+      summary: Mashina ma'lumotlarini yangilash
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Mashina ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CarUpdate'
+            example:
+              color: Oq
+              price: 26000
+      responses:
+        '200':
+          description: Yangilandi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CarResponse'
+
+  /api/cars/v3/delete/{id}:
+    delete:
+      tags:
+        - Cars
+      summary: Mashinani o'chirish
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Mashina ID
+      responses:
+        '200':
+          description: Mashina o'chirildi
+
+  /api/cars/v4/getall:
+    get:
+      tags:
+        - Cars
+      summary: Barcha mashinalar ro'yxati
+      responses:
+        '200':
+          description: Mashinalar ro'yxati
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CarResponse'
+
+  /api/permissions/v1/create:
+    post:
+      tags:
+        - Permissions
+      summary: Ruxsat yaratish
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PermissionCreate'
+            example:
+              branch_id: 60d0fe4f5311236168a109ca
+              user_id: 60d0fe4f5311236168a109cb
+              actions : POST GET PUT DELETE 
+              model : cars
+      responses:
+        '201':
+          description: Ruxsat yaratildi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PermissionResponse'
+
+  /api/permissions/v2/update/{id}:
+    put:
+      tags:
+        - Permissions
+      summary: Ruxsat yangilash
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Ruxsat ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PermissionUpdate'
+            example:
+              salary: 5500
+      responses:
+        '200':
+          description: Yangilandi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PermissionResponse'
+
+  /api/permissions/v3/remove/{id}:
+    delete:
+      tags:
+        - Permissions
+      summary: Ruxsatni o'chirish
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: Ruxsat ID
+      responses:
+        '200':
+          description: Ruxsat o'chirildi
+
+  /api/permissions/v4/getall:
+    get:
+      tags:
+        - Permissions
+      summary: Barcha ruxsatlar ro'yx
+components:
+  schemas:
+    UserRegister:
+      type: object
+      required:
+        - username
+        - password
+        - r_password
+        - birth_day
+      properties:
+        username:
+          type: string
+          example: johndoe
+        password:
+          type: string
+          example: MySecret123!
+        r_password:
+          type: string
+          example: MySecret123!
+        birth_day:
+          type: string
+          format: date
+          example: "2000-01-01"
+
+    UserResponse:
+      type: object
+      properties:
+        success:
+          type: boolen
+          example: true
+        accessToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        refreshToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."

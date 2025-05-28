@@ -18,22 +18,26 @@ const viloyatlar = [
 ];
 
 
-async function migration(){
+async function migration() {
     try {
         await DbConnect()
-        console.log(process.env)
 
-        for(let viloyat of viloyatlar){
-            const result = await addressModel.create({name:viloyat})
-            console.log(result)
+        for (let viloyat of viloyatlar) {
+            const exists = await addressModel.findOne({name : viloyat})
+            if(!exists) {
+                const result = await addressModel.create({ name: viloyat })
+            }
         }
         const all = await addressModel.find()
-        const cityIds = all.map(({_id}) => String(_id))
+        const cityIds = all.map(({ _id }) => String(_id))
         console.log(cityIds)
     } catch (error) {
-        console.log(error.message)        
+        console.log("Xatolik:", error.message)
+    } finally {
+        process.exit(0) 
     }
 }
+
 
 
 export default migration
