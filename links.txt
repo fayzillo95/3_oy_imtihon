@@ -1,0 +1,15 @@
+serverloglar
+
+    http://139.59.115.151:15975/api/serverlog/looger.log    
+
+userloglar
+    http://139.59.115.151:15975/api/userlog/looger.log
+
+clear log
+    http://139.59.115.151:15975/api/clearlog
+
+
+swaggers
+    http://139.59.115.151:15975/api-docs
+
+    
