@@ -16,7 +16,23 @@ export default class BranchService {
         }
         return branch        
     }
-
+    static async getSingleBranchAndAllresurs(branch_id) {
+        const branch = await checkIdAndExists(branch_id, branchModel, "Branch")
+        const adres = await addressModel.findById(branch.address_id)
+        const staffs = await staffModel.find({ branch_id })
+            .populate("user_id", {
+                role: 'staff',
+                username: 1
+            })
+        const cars = await carsModel.find({branch_id})
+        return {
+            branch :` ${branch.name} ${adres?.name} filiali `, 
+            data : {
+                staffs,
+                cars
+            }
+        }
+    }
     static async createItem(body) {
         const branch = await branchModel.findOne({name : body.name})
         if(branch) {

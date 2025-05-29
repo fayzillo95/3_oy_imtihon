@@ -12,7 +12,16 @@ export default class BranchController{
             next(error)
         }
     }
-
+    static async getAllInfoByBranchId(req, res, next){
+        try {
+            req.BranchData = await BranchService.getSingleBranchAndAllresurs(req.params.id)
+            req.status = 200
+            req.message = "Brand all info !"
+            next()
+        } catch (error) {
+            next(error)
+        }
+    }
     static async createBranch(req, res, next) {
         try {
             req.BranchData = await BranchService.createItem(req.body)

@@ -18,7 +18,7 @@ export default class Validation {
         const registerSchema = Joi.object({
             username: Joi.string().min(3).max(100).alphanum().required(),
             password: Joi.string().min(8).max(32).required(),
-            r_password: Joi.ref('password'),
+            r_password: Joi.string().valid(Joi.ref('password')).required(),
             birth_day: Joi.string().custom(isDate).required()
         })
         return registerSchema.validate(payload, {
