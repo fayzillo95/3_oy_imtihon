@@ -8,7 +8,7 @@ import { isAdmin } from "../midllwares/usersMidllwares/checkAdmin.js";
 const admin_router = Router()
 
 admin_router.post("/api/v1/users/role", checkToken, isAdmin,AdminController.createRole)
-admin_router.post("/api/v2/branchs/staff", checkToken, isAdmin, AdminController.createStaff)
+admin_router.post("/api/v2/branchs/staff", checkToken, createValid ,isAdmin, AdminController.createStaff)
 admin_router.get("/api/v3/branchs/staffs/all/:id",checkToken, isAdmin, AdminController.getAllStaffs)
 
 export default admin_router

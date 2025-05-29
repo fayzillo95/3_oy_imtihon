@@ -8,7 +8,7 @@ export default async function checkPermission(req, res, next) {
         let { id } = req.userData
 
         let user = await checkIdAndExists(id, usersModel, "User")
-        if(user.role === 'superadmin') return next() 
+        if(user.role === 'superadmin' || user.role === 'admin') return next() 
 
         let url = req.url.split("/")
         let model = url[url.indexOf("api") + 1]

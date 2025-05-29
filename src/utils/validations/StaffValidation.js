@@ -8,7 +8,7 @@ export default class Validation {
             branch_id : Joi.string().length(24).required(),
             user_id : Joi.string().length(24).required(),
             salary : Joi.number().required(),
-            role:Joi.string().valid("user","staff","admin")
+            role:Joi.string().valid("staff","admin")
         })
         return createSchema.validate(payload, {
             allowUnknown: false,
