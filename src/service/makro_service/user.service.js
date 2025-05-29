@@ -1,4 +1,5 @@
 import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
+import staffModel from "../../utils/models/staffModel.js";
 import usersModel from "../../utils/models/usersModel.js";
 import bcrypt from "bcrypt"
 
@@ -56,6 +57,7 @@ export default class UserService {
         if(!user){
             throw new NotFoundError("User")
         }
+        await staffModel.deleteOne({user_id:id})
         const result = await usersModel.findByIdAndDelete(id)
         console.log(result)
         return "User deleted !"

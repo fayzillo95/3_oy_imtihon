@@ -62,10 +62,11 @@ export default class BranchService {
     }
 
     static async deleteItem(id) {
-        console.log(id)
         await this.getById(id)
+        await staffModel.deleteMany({branch_id:id})
+        await carsModel.deleteMany({branch_id:id})
         const result = await branchModel.findByIdAndDelete(id)
         console.log(result)
-        return "branch deleted !"
+        return "branch closed adn delted in database !"
     }
 }

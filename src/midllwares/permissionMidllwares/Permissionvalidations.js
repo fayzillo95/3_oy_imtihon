@@ -4,7 +4,7 @@ import { ValidationError,CustomError } from "../../utils/errors/Vlaidatio.error.
 
 export const createValid = (req, res, next) => {
     try {
-        if(!req.body) throw new CustomError("Invalid data epty body")
+        if(!req.body) throw new CustomError("Invalid data epty body",400)
         if(Object.values(req.body).length === 0) throw new CustomError("Invalid data undefined values !", 400)
         
         const {error} = Validation.createValidation(req.body)
@@ -20,7 +20,7 @@ export const createValid = (req, res, next) => {
 
 export const updateValid = (req, res, next) => {
     try {
-        if(!req.body) throw new CustomError("Invalid data epty body")
+        if(!req.body) throw new CustomError("Invalid data epty body",400)
         if(Object.values(req.body).length === 0) throw new CustomError("Invalid data undefined values !", 400)
         const {error} = Validation.updateValidation(req.body)
         if(error) {
