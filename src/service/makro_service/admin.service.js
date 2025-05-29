@@ -10,7 +10,7 @@ export default class AdminService {
     static async CreateRole(body) {
 
         let role = body?.role
-        let user_id = body.user_id
+        let user_id = body?.user_id
         
         if (!role || !['user', 'staff', 'admin'].includes(role)) {
             throw new CustomError("Invalid role ! ", 400)
