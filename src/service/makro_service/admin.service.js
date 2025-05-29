@@ -9,7 +9,7 @@ export default class AdminService {
 
     static async CreateRole(body) {
 
-        let role = body.role
+        let role = body?.role
         let user_id = body.user_id
         
         if (!role || !['user', 'staff', 'admin'].includes(role)) {
