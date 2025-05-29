@@ -1,7 +1,7 @@
 import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
 import addressModel from "../../utils/models/addressModel.js";
 import branchModel from "../../utils/models/branchModel.js";
-
+import { checkIdAndExists } from "../mikro_service/checkId.js";
 export default class BranchService {
 
     constructor() {}
