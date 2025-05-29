@@ -36,7 +36,7 @@ export default class CarsService {
         const Cars = await CarsModel.findOne({name : body.name})
         
         if(Cars) {
-            throw new ExistsError("Cars")
+            throw new ExistsError(Cars.name)
         }
         const fileName = new Date().getTime() + "_" + file.name
         const fullPath = getPath(fileName)
