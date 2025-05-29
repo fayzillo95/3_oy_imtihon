@@ -1,4 +1,5 @@
 import { AuthorizationError, ExistsError, ForbiddenError, NotFoundError } from "../../utils/errors/Vlaidatio.error.js";
+import addressModel from "../../utils/models/addressModel.js";
 import branchModel from "../../utils/models/branchModel.js";
 
 export default class BranchService {
@@ -9,6 +10,10 @@ export default class BranchService {
         const data = await branchModel.find()
         return data
     }
+    static async gaetAdreses(){
+        return addressModel.find()
+    }
+
     static async getById(id) {
         const branch = await branchModel.findById(id)
         if(!branch){

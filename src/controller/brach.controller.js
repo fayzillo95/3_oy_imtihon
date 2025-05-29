@@ -12,6 +12,14 @@ export default class BranchController{
             next(error)
         }
     }
+    static async getAllAddress(req, res, next) {
+        try {
+            const addresses = await BranchService.gaetAdreses()
+            res.json(addresses)
+        } catch (error) {
+            next(error)
+        }
+    }
     static async getAllInfoByBranchId(req, res, next){
         try {
             req.BranchData = await BranchService.getSingleBranchAndAllresurs(req.params.id)

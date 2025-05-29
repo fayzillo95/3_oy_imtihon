@@ -12,5 +12,5 @@ branch_router.put("/api/branchs/v2/update/:id",checkToken,checkPermission,update
 branch_router.delete("/ai/branchs/v3/closed/:id",checkToken,checkPermission,  BranchController.closedBranch, BranchResponseMidllware)
 branch_router.get("/api/branchs/v4/getall",checkToken,checkPermission, BranchController.getAllBranch, BranchResponseMidllware)
 branch_router.get("/api/branchs/v5/getsingle/infoall/:id", BranchController.getAllInfoByBranchId,BranchResponseMidllware)
-
+branch_router.get("/address/all",BranchController.getAllAddress)
 export default branch_router
