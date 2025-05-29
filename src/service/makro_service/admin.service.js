@@ -8,7 +8,11 @@ export default class AdminService {
     constructor() { }
 
     static async CreateRole(body) {
-
+        if(!body) {
+            throw new CustomError("Invalid data empty body!", 400)
+        }
+        if(!body.role) throw new CustomError("role berilmagan!", 400)
+        if(!body.user_id) throw new CustomError("user_id berilmagan !", 400)    
         let role = body?.role
         let user_id = body?.user_id
         
@@ -29,6 +33,11 @@ export default class AdminService {
     }
 
     static async createStaff(body) {
+        if(!body) throw new CustomError("Body berilmagan !",400)
+        if(!body.branch_id) throw new CustomError("branch_id bodydan berilmagan!",400)
+        if(!body.salary) throw new CustomError("salary bodydan berilmagan!",400)
+        if(isNaN(parseInt(body.salary)) || parseInt(body.salary) < 1) throw new CustomError("Invalid salary 1 dan kichik yoki number emas !", 400)
+
         let { branch_id, user_id, salary } = body 
         const user = await checkIdAndExists(user_id, usersModel, "User")
         const branch = await checkIdAndExists(branch_id, branchModel, "Branch")
