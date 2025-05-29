@@ -1,6 +1,5 @@
 /node_modules
 /.env
-/src/utils/logs/serverlog/looger.log
-/src/utils/logs/serverlog/looger.log
+src/utils/logs/
 /src/utils/uploads
 /class.js
