@@ -1,0 +1,670 @@
+{
+	"info": {
+		"_postman_id": "7ba89de6-03ae-42e3-b10d-6dc5003be7bd",
+		"name": "digital ocean",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44048719",
+		"_collection_link": "https://fayzillo.postman.co/workspace/Fayzillo's-Workspace~b340ca22-82a7-4ccf-8dad-67af269e6d54/collection/44048719-7ba89de6-03ae-42e3-b10d-6dc5003be7bd?action=share&source=collection_link&creator=44048719"
+	},
+	"item": [
+		{
+			"name": "superadmin",
+			"item": [
+				{
+					"name": "register FayzilloDeveloperAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "FayzilloDeveloperAdmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "developerAdmin",
+									"type": "text"
+								},
+								{
+									"key": "r_password",
+									"value": "developerAdmin",
+									"type": "text"
+								},
+								{
+									"key": "birth_day",
+									"value": "1995-12-29",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/users/v1/register",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"users",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login FayzilloDeveloperAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "FayzilloDeveloperAdmin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "developerAdmin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://139.59.115.151:15975/api/users/v2/login",
+							"protocol": "http",
+							"host": [
+								"139",
+								"59",
+								"115",
+								"151"
+							],
+							"port": "15975",
+							"path": [
+								"api",
+								"users",
+								"v2",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/users/v5/getall",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"users",
+								"v5",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create permission",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/permissions/v1/create",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"permissions",
+								"v1",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create role",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "role",
+									"value": "staff",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "6838d39423eb9bf471107849",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/v1/users/role",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create staff",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "role",
+									"value": "staff",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "6838d39423eb9bf471107849",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/v1/users/role",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "branchs",
+			"item": [
+				{
+					"name": "get all addreess",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{vault:admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "BMW salon",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "6837042aefd947f50831ce32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/address/all",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"address",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "BMW",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "6837042aefd947f50831ce32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/branchs/v1/open",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"branchs",
+								"v1",
+								"open"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall branchs and All info",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "BMW salon",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "6837042aefd947f50831ce32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/branchs/v5/getsingle/infoall/6838cbe4e550fb2c8d59daab",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"branchs",
+								"v5",
+								"getsingle",
+								"infoall",
+								"6838cbe4e550fb2c8d59daab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getall branchs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update branch",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{admintoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Nomer 1 salon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/branchs/v2/update/6838cbe4e550fb2c8d59daab",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"branchs",
+								"v2",
+								"update",
+								"6838cbe4e550fb2c8d59daab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "close branch",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "bramch_id",
+								"value": "6838d0cc23eb9bf471107841",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/ai/branchs/v3/closed/6838d0cc23eb9bf471107841",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"ai",
+								"branchs",
+								"v3",
+								"closed",
+								"6838d0cc23eb9bf471107841"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "theArcher",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "r_password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "birth_day",
+									"value": "2000-01-01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/users/v1/register",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"users",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create car",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{f2token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "branch_id",
+								"value": "6838cbe4e550fb2c8d59daab",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Damas2",
+									"type": "text"
+								},
+								{
+									"key": "branch_id",
+									"value": "6838cbe4e550fb2c8d59daab",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "12354",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "oq rang",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1f0282d8-9efa-4a30-9b4d-b21cc649198c"
+								},
+								{
+									"key": "rusm",
+									"value": "Daewo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{onlinehost}}:{{port}}/api/cars/v1/create",
+							"protocol": "http",
+							"host": [
+								"{{onlinehost}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"cars",
+								"v1",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{admintoken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
