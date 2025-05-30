@@ -124,7 +124,35 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 ## Swagger
 
 API hujjatlari swagger orqali:  
+GET
 http://139.59.115.151:15975/api-docs
+
+Manzillar
+GET
+http://139.59.115.151:15975/address/all
+
+branch ma'lumotlari 
+GET
+http://139.59.115.151:15975/api/branchs/v5/getsingle/infoall/:branch_id
+
+STAFF lar
+GET   super admin
+http://139.59.115.151:15975/api/v3/branchs/staffs/all/:branch_id
+
+Create staff super admin
+http://139.59.115.151:15975/api/v2/branchs/staff
+
+
+
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
+http://139.59.115.151:15975
 
 ---
 
