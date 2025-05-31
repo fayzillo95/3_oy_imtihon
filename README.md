@@ -72,7 +72,7 @@ http://139.59.115.151:15975/api/v2/branchs/staff
 | POST  | /api/users/v1/register                      | Foydalanuvchini ro'yxatdan o'tkazish        |
 | POST  | /api/users/v2/login                         | Foydalanuvchini tizimga kirishi             |
 | PUT   | /api/users/v3/update                        | Foydalanuvchi ma'lumotlarini yangilash      |
-| DELETE| /api/users/v4/delete                        | Foydalanuvchini tizimdan chiqarish          |
+| DELETE| /api/users/v4/delete                        | Foydalanuvchi tokeni orqali udalit akkaunt  |
 | GET   | /api/users/v5/getall                        | Barcha foydalanuvchilar ro'yxati            |
 |-------|---------------------------------------------|---------------------------------------------|
 ## Super admin Apis 
