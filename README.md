@@ -169,8 +169,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 ```json
 {
   "success" : true,
-  "accessToken" : "ejw.Wxweefq39NQISWNKCEC.....",
-  "refreshToken" :"ejw.Wxweefq39NQISWNKCEC....."
+  "accessToken" : "Branch created !"
 }
 ```
 **User**  
