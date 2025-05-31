@@ -29,18 +29,12 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 
 
 ## Loglar va Swagger
-
-### 📄 Server Loglar
-- **URL:** [http://139.59.115.151:15975/api/serverlog/looger.log](http://139.59.115.151:15975/api/serverlog/looger.log)
-
-### 📄 User Loglar
-- **URL:** [http://139.59.115.151:15975/api/userlog/looger.log](http://139.59.115.151:15975/api/userlog/looger.log)
-
-### 🧹 Clear Log
-- **URL:** [http://139.59.115.151:15975/api/clearlog](http://139.59.115.151:15975/api/clearlog)
-
-### 📘 Swagger API hujjatlari
-- **URL:** [http://139.59.115.151:15975/api-docs](http://139.59.115.151:15975/api-docs)
+| Maqsadi          |  **URL:**  |
+|-------------------|---------------------------------------------------------------|
+| 📄 Server Loglar | [http://139.59.115.151:15975/api/serverlog/looger.log](http://139.59.115.151:15975/api/serverlog/looger.log)  |
+| 📄 User Loglar   |  [http://139.59.115.151:15975/api/userlog/looger.log](http://139.59.115.151:15975/api/userlog/looger.log)   |
+| 🧹 Clear Log   |  [http://139.59.115.151:15975/api/clearlog](http://139.59.115.151:15975/api/clearlog)  |
+| 📘 Swagger API hujjatlari  | [http://139.59.115.151:15975/api-docs](http://139.59.115.151:15975/api-docs)   |
 
 ---
 
