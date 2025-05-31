@@ -123,7 +123,11 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 |----------|---------------|------------------------|
 | name | string | required  
 | address_id | string (24 belgidan) | required  
-
+- Example 
+ - {
+ - "name" : "Asil car "
+ - "address_id" : "6837042aefd947f50831ce2e"
+ - }
 **Cars**  
 | Key       | Type   | Options   |
 |--------------|-----------|---------------------------|
