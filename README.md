@@ -124,6 +124,15 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | name | string | required  
 | address_id | string (24 belgidan) | required  
 - Example
+## 🔐 Authentication
+
+API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda yuboriladi:
+
+### 🧾 Header
+
+```http
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
+```
 # Request 
 ```json
 {
@@ -147,6 +156,17 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | color:       |  string,  |   min 3  |
 | price:       |  number,  |   required | 
 | img:         |  image/...  |   buffer  | 
+## 🔐 Authentication
+
+API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda yuboriladi:
+
+### 🧾 Header
+
+```http
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
+```
+
+
 
 **Permission**  
 | Key  |  value |  options |
