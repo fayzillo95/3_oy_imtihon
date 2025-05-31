@@ -115,6 +115,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 
 **Cars**  
 | Key       | Type   | Options   |
+|--------------|-----------|---------------------------|
 | name:        |  string,  |   required  |
 | branch_id:   |  string   |   (24 belgidan), required |  
 | rusm:        |  string,  |   min 3  |
