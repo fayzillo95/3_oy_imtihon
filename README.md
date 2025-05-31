@@ -117,19 +117,27 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 ---
 
 ## Validatsiyalar
-- Example 
+
+## **Branch**  
+| Key  | Value | options
+|----------|---------------|------------------------|
+| name | string | required  
+| address_id | string (24 belgidan) | required  
+- Example
+# Request 
 ```json
 {
 "name" : "Asil car ",
 "address_id" : "6837042aefd947f50831ce2e"
 }
 ```
-## **Branch**  
-| Key  | Value | options
-|----------|---------------|------------------------|
-| name | string | required  
-| address_id | string (24 belgidan) | required  
-
+# Response 
+```json
+{
+"name" : "Asil car ",
+"message" : "Branch created !"
+}
+```
 ## **Cars**  
 | Key       | Type   | Options   |
 |--------------|-----------|---------------------------|
@@ -169,7 +177,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 ```json
 {
   "success" : true,
-  "accessToken" : "Branch created !"
+  "message" : "Permission created !"
 }
 ```
 **User**  
