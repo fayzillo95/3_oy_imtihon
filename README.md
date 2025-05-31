@@ -60,6 +60,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 
 ## API Endpoints
 
+## User Apis 
 | Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/users/v1/register                      | Foydalanuvchini ro'yxatdan o'tkazish        |
@@ -86,7 +87,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | GET   | /address/all                                | Barcha manzillar ro'yxatini olish           |
 |-------|---------------------------------------------|---------------------------------------------|
 
-## Cars Ais
+## Car APis
 | Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/cars/v1/create                         | Avtomobil yaratish                          |
