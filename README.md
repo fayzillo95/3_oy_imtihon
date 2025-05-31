@@ -131,10 +131,12 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | model | string | cars staffs |
 
 **User**  
-- username: string, alfanumerik, 3-100 belgidan  
-- password: string, 8-32 belgidan  
-- r_password: password bilan mos bo'lishi kerak  
-- birth_day: ISO formatidagi sana  
+| Key  |  value |  options |
+|-----------|---------------|---------------|
+| username   | string, alfanumerik |  3-100 belgidan  
+| password   | string,  |  8-32 belgidan  
+| r_password  |  password  | bilan mos bo'lishi kerak  
+| birth_day | string | YYYY-MM-DD  
 
 ---
 
