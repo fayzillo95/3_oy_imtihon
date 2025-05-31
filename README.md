@@ -154,7 +154,7 @@ API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda y
 ### 🧾 Header
 
 ```http
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
 ```
  ```json
 {
