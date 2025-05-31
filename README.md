@@ -42,7 +42,6 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | 🏘 Manzillar   | [http://139.59.115.151:15975/address/all](http://139.59.115.151:15975/address/all) | 
 | 🗂 Branchlar  |  [http://139.59.115.151:15975/api/branchs/v4/getall](http://139.59.115.151:15975/api/branchs/v4/getall) |
 | 📒 Branch info  | [http://139.59.115.151:15975/api/branchs/v5/getsingle/infoall/:branch_id](http://139.59.115.151:15975/api/branchs/v5/getsingle/infoall/:branch_id)  |
-|  Staff lar   | [http://139.59.115.151:15975/api/v3/branchs/staffs/all/:branch_id](http://139.59.115.151:15975/api/v3/branchs/staffs/all/:branch_id)   |
 
 📒📔📓📰🗂📗📘📋🧾📑
 
