@@ -50,8 +50,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 - `{{onlinehost}}` – server hosti (masalan, `139.59.115.151`)
 - `{{port}}` – server porti (masalan, `15975`)
 - `{{admintoken}}` – token (Bearer Auth uchun)
-- `{{vault:admintoken}}` – Postman Vault orqali tokenni olish
-
+- `{{f2token}}` - yordamchi admin tokeni
 ---
 
 📁 [To‘plam havolasi](https://fayzillo.postman.co/workspace/Fayzillo's-Workspace~b340ca22-82a7-4ccf-8dad-67af269e6d54/collection/44048719-7ba89de6-03ae-42e3-b10d-6dc5003be7bd?action=share&source=collection_link&creator=44048719)
@@ -124,10 +123,12 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | img:         |  image/...  |   buffer  | 
 
 **Permission**  
-- branch_id: string (24 belgidan), required  
-- user_id: string (24 belgidan), required  
-- salary: number, required  
-- role: "staff" yoki "admin"  
+| Key  |  value |  options |
+|-----------|---------------|---------------|
+| branch_id: | string (24 belgidan)  |  required  
+| user_id:  |  string (24 belgidan)  | required  
+| actions | string | POST GET .... |
+| model | string | cars staffs |
 
 **User**  
 - username: string, alfanumerik, 3-100 belgidan  
