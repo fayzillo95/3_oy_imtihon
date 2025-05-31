@@ -70,6 +70,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | GET   | /api/users/v5/getall                        | Barcha foydalanuvchilar ro'yxati            |
 |-------|---------------------------------------------|---------------------------------------------|
 ## Super admin Apis 
+| Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/v1/users/role                          | Rol yaratish (Admin uchun)                  |
 | POST  | /api/v2/branchs/staff                       | Filial xodimini yaratish (Admin uchun)      |
