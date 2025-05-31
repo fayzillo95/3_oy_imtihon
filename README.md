@@ -114,12 +114,13 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | address_id | string (24 belgidan) | required  
 
 **Cars**  
-- name: string, required  
-- branch_id: string (24 belgidan), required  
-- rusm: string, min 3  
-- color: string, min 3  
-- price: number, required  
-- img: string, ixtiyoriy  
+| Key       | Type   | Options   |
+| name:        |  string,  |   required  |
+| branch_id:   |  string   |   (24 belgidan), required |  
+| rusm:        |  string,  |   min 3  |
+| color:       |  string,  |   min 3  |
+| price:       |  number,  |   required | 
+| img:         |  string,  |   ixtiyoriy | 
 
 **Permission**  
 - branch_id: string (24 belgidan), required  
