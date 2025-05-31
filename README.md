@@ -256,6 +256,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 
  - Example
  - Register
+## Request 
 ```json
 {
   "username" : "JonDoe",
@@ -274,7 +275,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 }
 
  ```
-## Javob formati
+## Response
 ```json
 {
   "success" : true,
