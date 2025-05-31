@@ -39,8 +39,11 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | 📄 User Loglar   |  [http://139.59.115.151:15975/api/userlog/looger.log](http://139.59.115.151:15975/api/userlog/looger.log)   |
 | 🧹 Clear Log   |  [http://139.59.115.151:15975/api/clearlog](http://139.59.115.151:15975/api/clearlog)  |
 | 📘 Swagger API hujjatlari  | [http://139.59.115.151:15975/api-docs](http://139.59.115.151:15975/api-docs)   |
-| 🏘 Manzillar   | [http://139.59.115.151:15975/address/all](http://139.59.115.151:15975/address/all) | 
-| 🗂 Branchlar  |  [http://139.59.115.151:15975/api/branchs/v4/getall](http://139.59.115.151:15975/api/branchs/v4/getall) |
+| 🏘 Manzillar   | [http://139.59.115.151:15975/address/all](http://139.59.115.151:15975/address/all) |
+
+ ## 🗂 Branchlar  
+ ## Token bilan 
+ - [http://139.59.115.151:15975/api/branchs/v4/getall](http://139.59.115.151:15975/api/branchs/v4/getall) |
 
 📒📔📓📰🗂📗📘📋🧾📑
 
