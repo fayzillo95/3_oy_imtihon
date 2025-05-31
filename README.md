@@ -68,27 +68,36 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | PUT   | /api/users/v3/update                        | Foydalanuvchi ma'lumotlarini yangilash      |
 | DELETE| /api/users/v4/delete                        | Foydalanuvchini tizimdan chiqarish          |
 | GET   | /api/users/v5/getall                        | Barcha foydalanuvchilar ro'yxati            |
+|-------|---------------------------------------------|---------------------------------------------|
 ## Super admin Apis 
+|-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/v1/users/role                          | Rol yaratish (Admin uchun)                  |
 | POST  | /api/v2/branchs/staff                       | Filial xodimini yaratish (Admin uchun)      |
 | GET   | /api/v3/branchs/staffs/all/:id              | Filialdagi barcha xodimlarni olish (Admin)  |
+|-------|---------------------------------------------|---------------------------------------------|
 ## Branch Apis
+|-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/branchs/v1/open                        | Filial yaratish                             |
 | PUT   | /api/branchs/v2/update/:id                  | Filial ma'lumotlarini yangilash             |
 | DELETE| /ai/branchs/v3/closed/:id                   | Filialni yopish                             |
 | GET   | /api/branchs/v4/getall                      | Barcha filiallarni olish                    |
 | GET   | /api/branchs/v5/getsingle/infoall/:id       | Filial haqida to'liq ma'lumot olish         |
 | GET   | /address/all                                | Barcha manzillar ro'yxatini olish           |
+|-------|---------------------------------------------|---------------------------------------------|
+
 ## Cars Ais
+|-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/cars/v1/create                         | Avtomobil yaratish                          |
 | PUT   | /api/cars/v2/update/:id                     | Avtomobil ma'lumotlarini yangilash          |
 | DELETE| /api/cars/v3/delete/:id                     | Avtomobilni o'chirish                       |
 | GET   | /api/cars/v4/getall                         | Barcha avtomobillar ro'yxati                |
 ## Permission Apis
+|-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/permissions/v1/create                  |  Ruxsatnoma yaratish                        |
 | PUT   | /api/permissions/v2/update/:id              |  Ruxsatnomani yangilash                     |
 | DELETE| /api/permissions/v3/remove/:id              |  Ruxsatnomani o'chirish                     |
 | GET   | /api/permissions/v4/getall                  |  Barcha ruxsatnomalarni olish               |
+|-------|---------------------------------------------|---------------------------------------------|
 
 ---
 
