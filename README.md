@@ -147,6 +147,8 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 "message" : "Branch created !"
 }
 ```
+---
+
 ## **Cars**  
 | Key       | Type   | Options   |
 |--------------|-----------|---------------------------|
@@ -166,7 +168,7 @@ API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda y
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
 ```
 
-
+---
 
 **Permission**  
 | Key  |  value |  options |
@@ -200,6 +202,8 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
   "message" : "Permission created !"
 }
 ```
+---
+
 **User**  
 | Key  |  value |  options |
 |-----------|---------------|---------------|
@@ -209,12 +213,22 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 | birth_day | string | YYYY-MM-DD  
 
  - Example
- ```json
+ - Register
+```json
 {
   "username" : "JonDoe",
   "password" : "12345678",
   "r_password" : "12345678",
   "birth_day" : "2000-01-01"
+}
+```
+
+ - Login
+
+```json
+{
+  "username" : "JonDoe",
+  "password" : "12345678"
 }
 
  ```
