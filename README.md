@@ -77,6 +77,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | GET   | /api/v3/branchs/staffs/all/:id              | Filialdagi barcha xodimlarni olish (Admin)  |
 |-------|---------------------------------------------|---------------------------------------------|
 ## Branch Apis
+| Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/branchs/v1/open                        | Filial yaratish                             |
 | PUT   | /api/branchs/v2/update/:id                  | Filial ma'lumotlarini yangilash             |
@@ -87,12 +88,14 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 |-------|---------------------------------------------|---------------------------------------------|
 
 ## Cars Ais
+| Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/cars/v1/create                         | Avtomobil yaratish                          |
 | PUT   | /api/cars/v2/update/:id                     | Avtomobil ma'lumotlarini yangilash          |
 | DELETE| /api/cars/v3/delete/:id                     | Avtomobilni o'chirish                       |
 | GET   | /api/cars/v4/getall                         | Barcha avtomobillar ro'yxati                |
 ## Permission Apis
+| Metod | Endpoint                                    | Ta’rif                                      |
 |-------|---------------------------------------------|---------------------------------------------|
 | POST  | /api/permissions/v1/create                  |  Ruxsatnoma yaratish                        |
 | PUT   | /api/permissions/v2/update/:id              |  Ruxsatnomani yangilash                     |
