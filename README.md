@@ -22,10 +22,14 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 ### 1. Superadmin
 
 #### 📌 `login FayzilloDeveloperAdmin`
+
 - **URL:** `POST /api/users/v2/login`
 - **Ma'lumotlar:** 
-    `username`, `FayzilloDeveloperAdmin`
-    `password` , `developerAdmin`
+
+|  Key           |    Value                |  
+|----------------|-------------------------|
+|  `username`,   |`FayzilloDeveloperAdmin` |
+|  `password` ,  | `developerAdmin`        |
 
 
 ## Loglar va Swagger
