@@ -134,16 +134,24 @@ API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda y
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
 ```
 # Request 
+ - Create
 ```json
 {
 "name" : "Asil car ",
 "address_id" : "6837042aefd947f50831ce2e"
 }
 ```
+- Update
+```json
+{
+"name" : "Asil car "
+}
+```
+
 # Response 
 ```json
 {
-"name" : "Asil car ",
+"success" : true,
 "message" : "Branch created !"
 }
 ```
@@ -167,7 +175,41 @@ API'ning ba'zi yo‘llari uchun `Bearer Token` talab qilinadi. Quyidagi tarzda y
 ```http
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZjMzMTBhMDgyNDNjZmQxMyIsImlhdCI6MTc0ODcxMDIxNSwiZXhwIjoxNzQ4Nzk2NjE1fQ.MHPy6n4w1mFbSDM0eWww1OeVUAHSKfDh_wk38IGXVMA
 ```
-
+# Request
+- Create
+```json
+{
+  "name" : "Car name",
+  "branch_id" : "6838cbe4e550fb2c8d59daab",
+  "rusm" : "Car rusumi Daewo yoki BMW v. kazo ..",
+  "color" : "Car rangi ",
+  "price" : "Narxi",
+  "img" : "file image/jpg  yoki image/png"  
+}
+```
+# Response
+```json
+{
+  "success" : true,
+  "message" : "Car created !"
+}
+```
+- Update
+```json
+{
+  "name" : "Car name", // ixtiyoriy
+  "rusm" : "Car rusumi Daewo yoki BMW v. kazo ..", // ixtiyoriy
+  "color" : "Car rangi ", // ixtiyoriy
+  "price" : "Narxi", // ixtiyoriy
+}
+```
+# Response
+```json
+{
+  "success" : true,
+  "message" : "Car updated !"
+}
+```
 ---
 
 **Permission**  
