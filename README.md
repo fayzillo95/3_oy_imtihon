@@ -255,8 +255,8 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzhhMzhmZ
 | birth_day | string | YYYY-MM-DD  
 
  - Example
- - Register
 ## Request 
+ - Register
 ```json
 {
   "username" : "JonDoe",
