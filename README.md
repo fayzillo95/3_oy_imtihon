@@ -108,8 +108,10 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 ## Validatsiyalar
 
 **Branch**  
-- name: string, required  
-- address_id: string (24 belgidan), required  
+| Key  | Value | options
+|----------|---------------|------------------------|
+| name | string | required  
+| address_id | string (24 belgidan) | required  
 
 **Cars**  
 - name: string, required  
