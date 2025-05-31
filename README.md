@@ -121,7 +121,7 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 | rusm:        |  string,  |   min 3  |
 | color:       |  string,  |   min 3  |
 | price:       |  number,  |   required | 
-| img:         |  string,  |   ixtiyoriy | 
+| img:         |  image/...  |   buffer  | 
 
 **Permission**  
 - branch_id: string (24 belgidan), required  
