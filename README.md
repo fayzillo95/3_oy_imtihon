@@ -47,8 +47,8 @@ Ushbu Postman to‘plami `Digital Ocean` API'lari bilan ishlash uchun tuzilgan b
 
 📒📔📓📰🗂📗📘📋🧾📑
 
-Create staff super admin
-http://139.59.115.151:15975/api/v2/branchs/staff
+## Create staff super admin
+- http://139.59.115.151:15975/api/v2/branchs/staff
 
 
 ---
